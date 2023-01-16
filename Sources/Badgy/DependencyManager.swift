@@ -28,7 +28,7 @@ import PathKit
 
 class DependencyManager {
     func areDependenciesInstalled() -> Bool {
-        let convertExecutablePath = Path("/usr/local/bin/convert")
+        let convertExecutablePath = Path("/opt/homebrew/bin/convert")
         return convertExecutablePath.exists && convertExecutablePath.isExecutable
     }
 }
